@@ -14,8 +14,12 @@ sub check_file {
 
 foreach(@files){
   my $file = $_;
+  if ( $file =~ /\.sub$/ ) { next }
+  if ( $file =~ /\.srt$/ ) { next }
   if ( -f $file ) {
     my $output = `ffprobe "$file" 2>&1`;
+    if ( $output =~ /Duration: N\/A/ ) { next }
+    if ( $output =~ /Unable to open/ ) { next }
     if ( $output !~ /h264/ ) {
       print "$file\n";
     }
