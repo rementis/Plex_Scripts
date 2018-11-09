@@ -1,1 +1,1 @@
-Script which may be useful to plex users
+Scripts which may be useful to plex users
