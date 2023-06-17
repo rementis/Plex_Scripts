@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Be sure to pip install plexapi
 import os 
 import sys
 import plexapi
