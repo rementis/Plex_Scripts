@@ -6,3 +6,5 @@ find_codecs.pl    You can use this script to generate a list of your media files
 If you run the script with no options it will search the current directory.  Or you can provide a path to search like this:  find_codecs.pl PATH
 
 Output file will be generated in /tmp and be readable by text editor, excel, libre calc, etc.  Simple csv!
+
+added.py can be used to remove a movie or tv show from Recently Added list in plex.
